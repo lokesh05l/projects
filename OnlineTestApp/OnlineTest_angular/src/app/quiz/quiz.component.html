@@ -1,0 +1,12 @@
+<div>
+    <h1><u>QUESTIONS</u></h1>
+    <table border="0" align="center">
+        <tr *ngFor ='let quiz of quizzes'>
+            <td class="quiz">{{quiz.question}}</td>
+            <td class="ans" align="center"><button (click)="updateUserAnswer(quiz.id)" class="btn btn-info" align="center">Click here to answer</button></td>
+        </tr> 
+    </table>
+    <br/>
+    <br/>
+    <button (click)="onSubmit()" [disabled]="enabled" >Check Results</button>
+</div>

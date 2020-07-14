@@ -1,0 +1,23 @@
+h1{
+    text-decoration: underline;
+    font-weight: bold;
+    color:darkblue;
+    font-size: 35px;
+}
+
+div b{
+    margin-top: 500px;
+    font-size: 29px;
+    color:red;
+}
+
+button{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif ;
+    color: white;
+}

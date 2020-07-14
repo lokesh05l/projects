@@ -1,0 +1,10 @@
+<div [hidden]="submitted" style="width: 400px; margin-top: 100px;">
+  <form name="form" (ngSubmit)="onSubmit(quiz.id)">
+    <div class="form-group">
+      <label>Type your answer</label><br/><br/>
+        <input type="text" class="form-control" id="userAnswer" required [(ngModel)]="quiz.userAnswer" name="userAnswer" #userAnswer="ngModel">
+      </div>
+      <br/>
+    <button type="submit" class="btn btn-success" [disabled]="!quiz.userAnswer">Submit</button>
+</form>
+</div>

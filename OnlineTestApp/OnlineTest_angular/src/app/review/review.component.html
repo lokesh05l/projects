@@ -1,0 +1,11 @@
+<div class="review">
+    <h1><u>REVIEW</u></h1><br/>
+    <b style="color:indigo; font-size: 24px">Number of attempts: {{attemptCount}}</b><br/><br/>
+    <div *ngFor ='let quiz of quizzes; let j=index' align ="left" style="text-align: justify;">
+        {{j+1}}. {{quiz.question}} <br>
+        <i style="color:red">Your Answer: {{quiz.userAnswer}}<br></i>
+        <b style="color:green">Correct Answer: {{quiz.correctAnswer}}</b><br><br><br>
+    </div>
+    <b style="color:indigo; font-size: 25px">To attempt quiz again, click below</b><br/>
+    <button align="center" (click)="onSubmit()">Attempt Quiz Again</button>
+</div>

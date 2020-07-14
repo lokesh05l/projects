@@ -1,0 +1,11 @@
+<div>
+    <h1>RESULT</h1><br/><br>
+    <div *ngIf="count>3; else elseBlock">
+        <b color:red>Congratulations! You've passed the test</b><br/><br/>
+        <button (click)="onSubmit()">Review Answers</button>
+    </div>
+    <ng-template #elseBlock>
+        <b>Oops! You've scored less than 60% </b><br/><br/>
+        <button (click)="onSubmit()">Attempt Quiz Again</button>
+    </ng-template>
+</div>
