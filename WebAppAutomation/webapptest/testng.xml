@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <suite thread-count="1" name="Web App Automation Test Suite" parallel="tests" >
+   
+   	<test name="REGISTRATION">
+    <classes>
+      <class name="com.test.Registration"/>
+    </classes>
+  	</test>
+  	
+  	<test name="LOGIN">
+    	<classes>
+      	<class name="com.test.Login"/>
+    	</classes>
+  	</test> 
+  	
+  	<test name="SEARCH PRODUCT">
+    	<classes>
+      	<class name="com.test.SearchProduct"/>
+    	</classes>
+  	</test> 
+  	
+  	<test name="ADD TO CART">
+    	<classes>
+      	<class name="com.test.AddToCart"/>
+    	</classes>
+  	</test> 
+</suite> <!-- Suite -->

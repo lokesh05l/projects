@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Web App Automation Test Suite]" parallel="tests">
+  <test thread-count="1" name="REGISTRATION(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.Registration">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="close"/>
+          <include name="register" invocation-numbers="0"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- com.test.Registration -->
+    </classes>
+  </test> <!-- REGISTRATION(failed) -->
+</suite> <!-- Failed suite [Web App Automation Test Suite] -->
